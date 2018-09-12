@@ -1,0 +1,30 @@
+{
+  "name": "piano-type",
+  "version": "1.0",
+  "description": "キーを打つとピアノの音が流れます。音：魔王魂:https://maoudamashii.jokersounds.com/",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "js/jquery.min.js",
+        "background.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "sounds/do.mp3",
+    "sounds/re.mp3",
+    "sounds/mi.mp3",
+    "sounds/fa.mp3",
+    "sounds/so.mp3",
+    "sounds/ra.mp3",
+    "sounds/si.mp3"
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2
+}
